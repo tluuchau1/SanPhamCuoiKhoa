@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Phim Mới</title>
+        <!--#include file="Header.html" -->
+
+        <link rel="stylesheet" href="../CSS/Home.css" />
+        <link rel="stylesheet" href="../CSS/HomeGird.css" />
+        <link rel="stylesheet" href="../CSS/Header.css" />
+        <link rel="stylesheet" href="../CSS/Footer.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/cdb547b0ce.js" crossorigin="anonymous"></script>
+        <style>
+            @media (min-width: 1024px) and (max-width: 1239px) {
+                .caption h2 {
+                    font-size: 17px;
+                }
+                .items-small {
+                    width: 100%;
+                }
+                .items-small img {
+                    width: 100%;
+                }
+            }
+            /* Mobile & Tablet */
+            @media (max-width: 1023px) {
+                .caption div {
+                    display: none;
+                }
+                .caption h2 {
+                    font-size: 17px;
+                }
+                .items-small {
+                    width: 100%;
+                }
+                .items-small img {
+                    width: 100%;
+                }
+            }
+            /*Tablet */
+            @media (mix-width: 740px) and (max-width: 1023px) {
+                .items-small {
+                    width: 100%;
+                }
+                .items-small img {
+                    width: 100%;
+                }
+            }
+            /* Mobile */
+            @media (max-width: 739px) {
+                .caption {
+                    flex-wrap: wrap;
+                }
+                .caption h2 {
+                    font-size: 14px;
+                }
+
+                .items-small {
+                    width: 100%;
+                }
+                .items-small img {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        
+
+
+        <header id="header">
+            <nav id="nav-bar">
+                <ul class="menu-phone">
+                    <li>
+                        <a href=""><i class="fa-solid fa-bars"></i></a>
+                    </li>
+                </ul>
+
+                <a href="./Home.html"><img class="logo" src="../Image/logo-phimmoi.png" alt="" /></a>
+
+                <ul class="main-menu">
+                    <li><a href="">PHIM MỚI</a></li>
+                    <li><a href="">PHIM LẺ</a></li>
+                    <li><a href="">PHIM BỘ</a></li>
+                    <li><a href="">PHIM SẮP CHIẾU</a></li>
+                    <li>
+                        <a href="#">THỂ LOẠI</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Anime</a></li>
+                            <li><a href="">Super Sentai</a></li>
+                            <li><a href="">Kamen Raider</a></li>
+                            <li><a href="">Phim hành động</a></li>
+                            <li><a href="">Phim Cổ trang</a></li>
+                            <li><a href="">Phim Ma-Kinh dị</a></li>
+                            <li><a href="">Phim Viễn tưởng</a></li>
+                            <li><a href="">Phim Tình cảm</a></li>
+                            <li><a href="">Phim Hài hước</a></li>
+                            <li><a href="">Phim Tâm lý</a></li>
+                            <li><a href="">Phim Khoa học</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">QUỐC GIA</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Phim Việt Nam</a></li>
+                            <li><a href="">Phim Nhật Bản</a></li>
+                            <li><a href="">Phim Anh-Mỹ</a></li>
+                            <li><a href="">Phim Hàn Quốc</a></li>
+                            <li><a href="">Phim Thái Lan</a></li>
+                            <li><a href="">Phim Ấn Độ</a></li>
+                            <li><a href="">Phim Trung Quốc</a></li>
+                            <li><a href="">Phim Đài Loan</a></li>
+                            <li><a href="">Phim Hồng Kong</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">NĂM PHÁT HÀNH</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Phim 2023</a></li>
+                            <li><a href="">Phim 2022</a></li>
+                            <li><a href="">Phim 2021</a></li>
+                            <li><a href="">Phim 2020</a></li>
+                            <li><a href="">Phim 2019</a></li>
+                            <li><a href="">Phim 2018</a></li>
+                            <li><a href="">Phim 2017</a></li>
+                            <li><a href="">Phim 2016</a></li>
+                            <li><a href="">Phim 2015</a></li>
+                            <li><a href="">Phim 2014</a></li>
+                            <li><a href="">Phim 2013</a></li>
+                            <li><a href="">Phim 2012</a></li>
+                            <li><a href="">Phim 2011</a></li>
+                            <li><a href="">Phim 2010</a></li>
+                            <li><a href="">Phim trước 2010</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="search">
+                    <form action="search" class="form">
+                        <label for="search" id="label">
+                            <input class="input-search" type="text" placeholder=" Nhập tìm kiếm" />
+                            <button id="button">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </label>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="grid wide">
+                <div class="caption">
+                    <h2 title="Xem Phim">Phim Hot</h2>
+                    <div class="box align-right">Xem Tất cả <i class="fa-solid fa-play"></i></div>
+                </div>
+                <div class="row">
+                    <div class="items col l-2-4 m-4 c-6">
+                        <a href="#">
+                            <span class="label">HD | Vietsub</span>
+                            <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                            <img src="../Image/Movie-Item/anh-em-super-mario.png" alt="mario" title="Anh em Super Mario" />
+                            <p>Anh em Super Mario</p>
+                        </a>
+                    </div>
+                    <div class="items col l-2-4 m-4 c-6">
+                        <a href="#">
+                            <span class="label">HD | Vietsub</span>
+                            <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                            <img src="../Image/Movie-Item/antman.jpg" alt="AntMan" title="Người Kiến Và Chiến Binh Ong: Thế Giới Lượng Tử" />
+                            <p>Người Kiến Và Chiến Binh Ong: Thế Giới Lượng Tử</p>
+                        </a>
+                    </div>
+                    <div class="items col l-2-4 m-4 c-6">
+                        <a href="#">
+                            <span class="label">HD | Vietsub</span>
+                            <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                            <img src="../Image/Movie-Item/Avatar 2.jpg" alt="Avatar 2" title="Avatar 2" />
+                            <p>Avatar 2</p>
+                        </a>
+                    </div>
+                    <div class="items col l-2-4 m-4 c-6">
+                        <a href="#">
+                            <span class="label">HD | Vietsub</span>
+                            <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                            <img
+                                src="../Image/Movie-Item/shazam-2-con-thinh-no-cua-cac-vi-than.jpg"
+                                alt="Shazam 2 Cơn Thịnh Nộ Của Các Vị Thần"
+                                title="Shazam 2 Cơn Thịnh Nộ Của Các Vị Thần"
+                            />
+                            <p>Shazam 2 Cơn Thịnh Nộ Của Các Vị Thần</p>
+                        </a>
+                    </div>
+                    <div class="items col l-2-4 m-4 c-6">
+                        <a href="#">
+                            <span class="label">HD | Vietsub</span>
+                            <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                            <img
+                                src="../Image/Movie-Item/sat-thu-john-wick-phan-4.png"
+                                alt="Sát thủ John Wick Phần 4"
+                                title="Sát thủ John Wick Phần 4"
+                            />
+                            <p>Sát thủ John Wick Phần 4</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="caption">
+                    <h2>Phim Sắp Chiếu</h2>
+                    <div class="box align-right">Xem Tất cả <i class="fa-solid fa-play"></i></div>
+                </div>
+                <div class="row">
+                    <div class="items col l-2-4 m-4 c-6">
+                        <a href="#">
+                            <span class="label">HD | Vietsub</span>
+                            <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                            <img src="../Image/Movie-Item/anh-em-super-mario.png" alt="mario" title="Anh em Super Mario" />
+                            <p>Anh em Super Mario</p>
+                        </a>
+                    </div>
+                    <div class="items col l-2-4 m-4 c-6">
+                        <a href="#">
+                            <span class="label">HD | Vietsub</span>
+                            <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                            <img src="../Image/Movie-Item/65-tran-chien-thoi-tien-su.png" alt="sinhtu" title="Trận Chiến Thời Tiền Sử" />
+                            <p>Trận Chiến Thời Tiền Sử</p>
+                        </a>
+                    </div>
+                    <div class="items col l-2-4 m-4 c-6">
+                        <a href="#">
+                            <span class="label">HD | Vietsub</span>
+                            <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                            <img src="../Image/Movie-Item/co-le-la-yeu-phan-2.png" alt="co le la yeu" title="Có Lẽ Là Yêu Phần 2" />
+                            <p>Có Lẽ Là Yêu Phần 2</p>
+                        </a>
+                    </div>
+                    <div class="items col l-2-4 m-4 c-6">
+                        <a href="#">
+                            <span class="label">HD | Vietsub</span>
+                            <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                            <img
+                                src="../Image/Movie-Item/thu-phu-dai-nhan-co-thuat-doc-tam.png"
+                                alt="thuat doc tam"
+                                title="Thủ Phụ Đại Nhân Có Thuật Đọc Tâm"
+                            />
+                            <p>Thủ Phụ Đại Nhân Có Thuật Đọc Tâm</p>
+                        </a>
+                    </div>
+                    <div class="items col l-2-4 m-4 c-6">
+                        <a href="#">
+                            <span class="label">HD | Vietsub</span>
+                            <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                            <img src="../Image/Movie-Item/the-promise.png" alt="Promise" title="The Promise" />
+                            <p>The Promise</p>
+                        </a>
+                    </div>
+                    <div class="items col l-2-4 m-4 c-6">
+                        <a href="#">
+                            <span class="label">HD | Vietsub</span>
+                            <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                            <img src="../Image/Movie-Item/tieu-thu-xuan-gia-la-tung-su.png" alt="Tieuthu" title="Tiêu Thư Xuân Gia Là Tụng Sư" />
+                            <p>Tiêu Thư Xuân Gia Là Tụng Sư</p>
+                        </a>
+                    </div>
+                    <div class="items col l-2-4 m-4 c-6">
+                        <a href="#">
+                            <span class="label">HD | Vietsub</span>
+                            <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                            <img src="../Image/Movie-Item/co-dau-bi-cao.png" alt="codaubicao" title="Cô Dâu Bị Cáo" />
+                            <p>Cô Dâu Bị Cáo</p>
+                        </a>
+                    </div>
+                    <div class="items col l-2-4 m-4 c-6">
+                        <a href="#">
+                            <span class="label">HD | Vietsub</span>
+                            <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                            <img src="../Image/Movie-Item/sat-thu-john-wick-phan-4.png" alt="John Wick" title="Sát Thủ John Wick Phần 4" />
+                            <p>Sát Thủ John Wick Phần 4</p>
+                        </a>
+                    </div>
+                    <div class="items col l-2-4 m-4 c-6">
+                        <a href="#">
+                            <span class="label">HD | Vietsub</span>
+                            <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                            <img
+                                src="../Image/Movie-Item/shazam-2-con-thinh-no-cua-cac-vi-than.jpg"
+                                alt="Shazam"
+                                title="Shazam 2 Cơn Thịnh Nộ Của Các Vị Thần"
+                            />
+                            <p>Shazam 2 Cơn Thịnh Nộ Của Các Vị Thần</p>
+                        </a>
+                    </div>
+                    <div class="items col l-2-4 m-4 c-6">
+                        <a href="#">
+                            <span class="label">HD | Vietsub</span>
+                            <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                            <img src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png" alt="Taydấm" title="Tay Đấm Huyền Thoại 3" />
+                            <p>Tay Đấm Huyền Thoại 3</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="caption">
+                    <h2>PHIM THỊNH HÀNH</h2>
+                    <div class="box mg-right">Phim Lẻ Thịnh Hành</div>
+                    <div class="box mg-right">Phim Bộ Thịnh Hành</div>
+                    <div class="box align-right">Xem Tất cả <i class="fa-solid fa-play"></i></div>
+                </div>
+                <div class="row">
+                    <div class="items col l-2-6 m-12 c-12">
+                        <a href="#">
+                            <span class="label">HD | Vietsub</span>
+                            <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                            <img
+                                src="../Image/Movie-Item/sat-thu-john-wick-phan-4.png"
+                                style="flex-grow: 1; height: 280px"
+                                alt="John Wick"
+                                title="Sát Thủ John Wick Phần 4"
+                            />
+                            <p>Sát Thủ John Wick Phần 4</p>
+                        </a>
+                    </div>
+
+                    <div class="items col l-2-7 m-12 c-12">
+                        <div class="row">
+                            <div class="col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img src="../Image/Movie-Item/Avatar 2.jpg" alt="avatar2" title="Avatar 2" />
+                                        <p>Avatar 2</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img src="../Image/Movie-Item/tai-xe-an-danh-phan-2.jpg" alt="taixeandanh" title="Tài Xế Ẩn Danh Phần 2" />
+                                        <p>Tài Xế Ẩn Danh Phần 2</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img src="../Image/Movie-Item/the-last-of-us.jpg" alt="the last of us" title="The Last Of Us" />
+                                        <p>The Last Of Us</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img src="../Image/Movie-Item/kill-boksoon.jpg" alt="Kill Boksoon" title="Kill Boksoon" />
+                                        <p>Kill Boksoon</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img
+                                            src="../Image/Movie-Item/bong-ma-anh-quoc-phan-1.jpg"
+                                            alt="bong ma anh quoc"
+                                            title="Bóng Ma Anh Quốc: Phần 1"
+                                        />
+                                        <p>Bóng Ma Anh Quốc: Phần 1</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img
+                                            src="../Image/Movie-Item/vu-giet-nguoi-bi-an-2.jpg"
+                                            alt="vu giet nguoi bi an"
+                                            title="Vụ Giết Người Bí Ẩn: Phần 2"
+                                        />
+                                        <p>Vụ Giết Người Bí Ẩn: Phần 2</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="caption">
+                    <h2>PHIM LẺ MỚI CẬP NHẬT</h2>
+                    <div class="box mg-right">Hành Động</div>
+                    <div class="box mg-right">Hoạt Hình</div>
+                    <div class="box mg-right">Kinh Dị</div>
+                    <div class="box mg-right">Hài Hước</div>
+                    <div class="box align-right">Xem Tất cả <i class="fa-solid fa-play"></i></div>
+                </div>
+
+                <div class="row">
+                    <div class="items col l-2-6 m-12 c-12">
+                        <a href="#">
+                            <span class="label">HD | Vietsub</span>
+                            <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                            <img
+                                src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png"
+                                style="flex-grow: 1; height: 280px"
+                                alt="Tay dam huyen thoai"
+                                title="Tay Đấm Huyền Thoại 3"
+                            />
+                            <p>Tay Đấm Huyền Thoại 3</p>
+                        </a>
+                    </div>
+
+                    <div class="items col l-2-7 m-12 c-12">
+                        <div class="row">
+                            <div class="col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img src="../Image/Movie-Item/kill-boksoon.jpg" alt="Kill Boksoon" title="Kill Boksoon" />
+                                        <p>Kill Boksoon</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img src="../Image/Movie-Item/khong-nhin-thay.jpg" alt="unseen" title="Không Nhìn Thấy" />
+                                        <p>Không Nhìn Thấy</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img src="../Image/Movie-Item/tetris.jpg" alt="Tetris" title="Tetris" />
+                                        <p>Tetris</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img src="../Image/Movie-Item/tran-chien-saipan.jpg" alt="tran chien saipan" title="Tran Chien Saipan" />
+                                        <p>Tran Chien Saipan</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img src="../Image/Movie-Item/bao-thai-quy-di.jpg" alt="bao thai quy di" title="Bào Thai Quỷ Dị" />
+                                        <p>Bào Thai Quỷ Dị</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img
+                                            src="../Image/Movie-Item/big-mack-xa-hoi-den-va-vang.jpg"
+                                            alt="big mack"
+                                            title="Big Mack: Xã Hội Đen và Vàng"
+                                        />
+                                        <p>Big Mack: Xã Hội Đen và Vàng</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="items col l-12 m-0 c-0">
+                        <div class="row">
+                            <div class="items col l-2-4 m-0 c-0">
+                                <a href="#">
+                                    <span class="label">HD | Vietsub</span>
+                                    <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                    <img
+                                        src="../Image/Movie-Item/xac-uop-cuoc-phieu-luu-den-london.jpg"
+                                        alt="xac uop: cuoc phieu luu den london"
+                                        title="Xác Ướp: Cuộc Phiêu Lưu Đến London"
+                                    />
+                                    <p>Xác Ướp: Cuộc Phiêu Lưu Đến London</p>
+                                </a>
+                            </div>
+                            <div class="items col l-2-4 m-0 c-0">
+                                <a href="#">
+                                    <span class="label">HD | Vietsub</span>
+                                    <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                    <img src="../Image/Movie-Item/nhung-ke-ben-le.jpg" alt="nhung ke ben le" title="Những Kẻ Bên Lề" />
+                                    <p>Những Kẻ Bên Lề</p>
+                                </a>
+                            </div>
+                            <div class="items col l-2-4 m-0 c-0">
+                                <a href="#">
+                                    <span class="label">HD | Vietsub</span>
+                                    <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                    <img src="../Image/Movie-Item/gau-phe-pha.jpg" alt="gau phe pha" title="Gấu Phê Pha" />
+                                    <p>Gấu Phê Pha</p>
+                                </a>
+                            </div>
+                            <div class="items col l-2-4 m-0 c-0">
+                                <a href="#">
+                                    <span class="label">HD | Vietsub</span>
+                                    <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                    <img src="../Image/Movie-Item/kill-boksoon.jpg" alt="Kill Boksoon" title="Kill Boksoon" />
+                                    <p>Kill Boksoon</p>
+                                </a>
+                            </div>
+                            <div class="items col l-2-4 m-0 c-0">
+                                <a href="#">
+                                    <span class="label">HD | Vietsub</span>
+                                    <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                    <img src="../Image/Movie-Item/dinh-legacy.jpg" alt="dinh legacy" title="Đỉnh Legacy" />
+                                    <p>Đỉnh Legacy</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="caption mg-right">
+                    <h2>PHIM CHIẾU RẠP</h2>
+                    <div class="box mg-right">2021</div>
+                    <div class="box mg-right">2020</div>
+                    <div class="box mg-right">2019</div>
+                    <div class="box mg-right">2018</div>
+                    <div class="box align-right">Xem Tất cả <i class="fa-solid fa-play"></i></div>
+                </div>
+                <div class="row">
+                    <div class="items col l-2-6 m-12 c-12">
+                        <a href="#">
+                            <span class="label">HD | Vietsub</span>
+                            <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                            <img
+                                src="../Image/Movie-Item/tay-dam-huyen-thoai-3.png"
+                                style="flex-grow: 1; height: 280px"
+                                alt="Tay dam huyen thoai"
+                                title="Tay Đấm Huyền Thoại 3"
+                            />
+                            <p>Tay Đấm Huyền Thoại 3</p>
+                        </a>
+                    </div>
+
+                    <div class="items col l-2-7 m-12 c-12">
+                        <div class="row">
+                            <div class="col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img src="../Image/Movie-Item/sieu-anh-hung-shazam-2019.jpg" alt="Shazam 3" title="Siêu Anh Hùng Shazam" />
+                                        <p>Siêu Anh Hùng Shazam</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img
+                                            src="../Image/Movie-Item/kisaragi-nha-ga-nuot-chung.jpg"
+                                            alt="Kisaragi"
+                                            title="Kisaragi Nhà Ga Nuốt Chửng"
+                                        />
+                                        <p>Kisaragi Nhà Ga Nuốt Chửng</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img src="../Image/Movie-Item/one-piece-film-red-2022.jpg" alt="one piece red" title="One Piece Film: Red" />
+                                        <p>One Piece Film: Red</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img src="../Image/Movie-Item/thanh-vat-cua-quy.jpg" alt="Thanh vat cua quy" title="Thánh Vật Của Quỷ" />
+                                        <p>Thánh Vật Của Quỷ</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img src="../Image/Movie-Item/tieng-thet-6.jpg" alt="tieng thet 6" title="Tiếng Thét 6" />
+                                        <p>Tiếng Thét 6</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img src="../Image/Movie-Item/phi-vu-toan-sao.jpg" alt="phi vu toan sao" title="Phi Vụ Toàn Sao" />
+                                        <p>Phi Vụ Toàn Sao</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items col l-12 m-0 c-0">
+                        <div class="row">
+                            <div class="items col l-2-4 m-0 c-0">
+                                <a href="#">
+                                    <span class="label">HD | Vietsub</span>
+                                    <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                    <img src="../Image/Movie-Item/mat-tich-2023.jpg" alt="missing" title="Mất Tích" />
+                                    <p>Mất Tích</p>
+                                </a>
+                            </div>
+                            <div class="items col l-2-4 m-0 c-0">
+                                <a href="#">
+                                    <span class="label">HD | Vietsub</span>
+                                    <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                    <img
+                                        src="../Image/Movie-Item/otto-bac-hang-xom-kho-o.jpg"
+                                        alt="otto bac hang xom kho o"
+                                        title="Otto Bác Hàng Xóm Khó Ở"
+                                    />
+                                    <p>Otto Bác Hàng Xóm Khó Ở</p>
+                                </a>
+                            </div>
+                            <div class="items col l-2-4 m-0 c-0">
+                                <a href="#">
+                                    <span class="label">HD | Vietsub</span>
+                                    <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                    <img
+                                        src="../Image/Movie-Item/tieng-go-o-can-nha-go.jpg"
+                                        alt="tieng go o can nha go"
+                                        title="Tiếng Gõ Ở Căn Nhà Gỗ"
+                                    />
+                                    <p>Tiếng Gõ Ở Căn Nhà Gỗ</p>
+                                </a>
+                            </div>
+                            <div class="items col l-2-4 m-0 c-0">
+                                <a href="#">
+                                    <span class="label">HD | Vietsub</span>
+                                    <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                    <img src="../Image/Movie-Item/antman.jpg" alt="Ant Man" title="Người Kiến Và Chiến Binh Ong: Thế Giới Lưởng Tử" />
+                                    <p>Người Kiến Và Chiến Binh Ong: Thế Giới Lưởng Tử</p>
+                                </a>
+                            </div>
+                            <div class="items col l-2-4 m-0 c-0">
+                                <a href="#">
+                                    <span class="label">HD | Vietsub</span>
+                                    <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                    <img src="../Image/Movie-Item/quai-vat-song-mekong.jpg" alt="quai vat mekong" title="Quái vật Sông Mekong" />
+                                    <p>Quái vật Sông Mekong</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="caption">
+                    <h2>PHIM BỘ MỚI CẬP NHẬT</h2>
+                    <div class="box mg-right">Hàn Quốc</div>
+                    <div class="box mg-right">Trung Quốc</div>
+                    <div class="box mg-right">Âu - Mỹ</div>
+                    <div class="box mg-right">Phim Bộ Full</div>
+                    <div class="box align-right">Xem Tất cả <i class="fa-solid fa-play"></i></div>
+                </div>
+
+                <div class="row">
+                    <div class="items col l-2-6 m-12 c-12">
+                        <a href="#">
+                            <span class="label">HD | Vietsub</span>
+                            <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                            <img
+                                src="../Image/Movie-Item/hon-ma-truong-hoc.jpg"
+                                style="flex-grow: 1; height: 280px"
+                                alt="Hon ma truong hoc"
+                                title="Hồn Ma Trường Học"
+                            />
+                            <p>Hồn Ma Trường Học</p>
+                        </a>
+                    </div>
+
+                    <div class="items col l-2-7 m-12 c-12">
+                        <div class="row">
+                            <div class="col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img
+                                            src="../Image/Movie-Item/biet-doi-tang-hinh-2023.jpg"
+                                            alt="Biet doi tanh hinh"
+                                            title="Biệt Đội Tàng Hình"
+                                        />
+                                        <p>Biệt Đội Tàng Hình</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img src="../Image/Movie-Item/vo-gian.jpg" alt="vo gian" title="Vô Gian" />
+                                        <p>Vô Gian</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img src="../Image/Movie-Item/nhan-sinh-lo-dao.jpg" alt="nhan sinh lo dao" title="Nhân Sinh Lộ Dao" />
+                                        <p>Nhân Sinh Lộ Dao</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img src="../Image/Movie-Item/son-ha-chi-anh.jpg" alt="Son Ha Chi Anh" title="Sơn Hà Chỉ Ảnh" />
+                                        <p>Sơn Hà Chỉ Ảnh</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img src="../Image/Movie-Item/chuyen-minh-ruc-ro.jpg" alt="Chuyen Minh ruc ro" title="Chuyện Mình Rực Rỡ" />
+                                        <p>Chuyện Mình Rực Rỡ</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items col l-4 m-6 c-6">
+                                <div class="items-small">
+                                    <a href="#">
+                                        <span class="label">HD | Vietsub</span>
+                                        <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                        <img src="../Image/Movie-Item/la-yeu-ma-thoi.jpg" alt="la yeu ma thoi" title="Là Yêu Mà Thôi" />
+                                        <p>Là Yêu Mà Thôi</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items col l-12 m-0 c-0">
+                        <div class="row">
+                            <div class="items col l-2-4 m-0 c-0">
+                                <a href="#">
+                                    <span class="label">HD | Vietsub</span>
+                                    <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                    <img src="../Image/Movie-Item/luat-su-thoi-joseon.jpg" alt="luat su thoi joseon" title="Luật Sư Thời Joseon" />
+                                    <p>Luật Sư Thời Joseon</p>
+                                </a>
+                            </div>
+                            <div class="items col l-2-4 m-0 c-0">
+                                <a href="#">
+                                    <span class="label">HD | Vietsub</span>
+                                    <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                    <img src="../Image/Movie-Item/chuyen-ke-hoa-luu-ly.jpg" alt="Chuyện Kể Hoa Lưu Ly" title="Chuyện Kể Hoa Lưu Ly" />
+                                    <p>Chuyện Kể Hoa Lưu Ly</p>
+                                </a>
+                            </div>
+                            <div class="items col l-2-4 m-0 c-0">
+                                <a href="#">
+                                    <span class="label">HD | Vietsub</span>
+                                    <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                    <img src="../Image/Movie-Item/khoa-hoc-ve-tinh-yeu.jpg" alt="Khoa hoc ve tinh yeu" title="Khoa Học Về Tình Yêu" />
+                                    <p>Khoa Học Về Tình Yêu</p>
+                                </a>
+                            </div>
+                            <div class="items col l-2-4 m-0 c-0">
+                                <a href="#">
+                                    <span class="label">HD | Vietsub</span>
+                                    <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                    <img
+                                        src="../Image/Movie-Item/truong-hoc-khong-toan-2023.jpg"
+                                        alt="truong hoc khong toan"
+                                        title="Trường Học Không Toán"
+                                    />
+                                    <p>Trường Học Không Toán</p>
+                                </a>
+                            </div>
+                            <div class="items col l-2-4 m-0 c-0">
+                                <a href="#">
+                                    <span class="label">HD | Vietsub</span>
+                                    <div class="icon-play"><i class="fa-sharp fa-regular fa-circle-play fa-fade" style="color: #ffaf24"></i></div>
+                                    <img
+                                        src="../Image/Movie-Item/nguoi-mandalorian-phan-3.jpg"
+                                        alt="nguoi mandalore phan 3"
+                                        title="Người Mandalore (Phần 3)"
+                                    />
+                                    <p>Người Mandalore (Phần 3)</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <a href="./Home.html"><img class="logo" src="../Image/logo-phimmoi.png" alt="Logo" /></a>
+            <div>
+                <p>Thông tin:</p>
+                <span><a href="">Điều khoản sử dụng</a></span>
+                <span><a href="">Chính sách riêng tư</a></span>
+                <span><a href="">Khiếu nại bản quyền</a></span>
+            </div>
+
+            <div>
+                <p>Trợ giúp:</p>
+                <span><a href="">Hỏi đáp</a></span>
+                <span><a href="">Liên hệ</a></span>
+                <span><a href="">Tin tức</a></span>
+            </div>
+
+            <div>
+                <p>Theo dõi chúng tôi:</p>
+                <div class="media-social">
+                    <span class="media-social-1">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    </span>
+                    <span class="media-social-2">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </span>
+                    <span class="media-social-3">
+                        <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
